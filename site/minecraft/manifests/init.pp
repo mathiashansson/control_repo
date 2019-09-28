@@ -17,4 +17,8 @@ class mineraft {
   ensure => file,
   source => 'puppet:///modules/minecraft/minecraft.service',
   }
+  service {'minecraft':
+   ensure => enable,
+   enable => true, 
+  }
   }
